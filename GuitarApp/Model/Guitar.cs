@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace GuitarApp.Model
+{
+    
+
+    public class Guitar
+    {
+        public string SerialNumber { get; }
+        public double Price { get; set; }
+        public GuitarSpec Spec { get; }
+
+        public Guitar(string serialNumber, double price, GuitarSpec spec)
+        {
+            SerialNumber = serialNumber;
+            Price = price;
+            Spec = spec;
+        }
+    }
+}
